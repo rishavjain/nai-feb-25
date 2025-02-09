@@ -1,4 +1,4 @@
-import { Modal } from '@mantine/core'
+import { Loader, Modal } from '@mantine/core'
 import styles from './app.module.css'
 import { catalog } from './data.ts'
 import { useDisclosure } from '@mantine/hooks'
@@ -93,7 +93,11 @@ export const App = () => {
               onLoadSuccess={({ numPages }) =>
                 setSelectedDocument({ ...selectedDocument, numPages })
               }
-              loading={<></>}
+              loading={
+                <div className={styles.loader}>
+                  <Loader size={'md'} color={'brown'} />
+                </div>
+              }
             >
               {selectedDocument.numPages &&
                 Array.from(Array(selectedDocument.numPages)).map((_, index) => (
