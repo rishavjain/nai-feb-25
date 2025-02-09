@@ -7,6 +7,7 @@ const config = {
   tabWidth: 2,
   semi: false,
   singleQuote: true,
+  plugins: ['@ianvs/prettier-plugin-sort-imports'],
 }
 
 export default config
