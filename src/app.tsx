@@ -44,6 +44,16 @@ export const App = () => {
     return <span>No data for given path "{path}"</span>
   }
 
+  const handleOpen = (fileName: string) => () => {
+    open()
+    setSelectedDocument({ ...selectedDocument, src: fileName, numPages: 1 })
+  }
+
+  const handleClose = () => {
+    close()
+    setSelectedDocument(undefined)
+  }
+
   return (
     <>
       <div className={styles.imageContainer}>
@@ -51,6 +61,7 @@ export const App = () => {
         {data.documentLinks.map(({ linkTarget, fileName }, index) => (
           <Fragment key={index}>
             <div
+              role={'button'}
               style={{
                 top: `${linkTarget.top / 16}em`,
                 left: `${linkTarget.left / 16}em`,
@@ -62,24 +73,14 @@ export const App = () => {
                 // height: '100px',
               }}
               className={styles.link}
-              onClick={() => {
-                open()
-                setSelectedDocument({
-                  ...selectedDocument,
-                  src: fileName,
-                  numPages: 1,
-                })
-              }}
+              onClick={handleOpen(fileName)}
             />
           </Fragment>
         ))}
       </div>
       <Modal
         opened={opened}
-        onClose={() => {
-          close()
-          setSelectedDocument(undefined)
-        }}
+        onClose={handleClose}
         fullScreen={true}
         classNames={{ content: styles.modalContent, body: styles.modalBody }}
         lockScroll={false}

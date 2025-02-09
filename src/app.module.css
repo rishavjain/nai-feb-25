@@ -25,7 +25,8 @@ div.root {
 
 .link {
   position: absolute;
-  background: rgba(0, 0, 255, 0.4);
+  cursor: pointer;
+  /*background: rgba(0, 0, 255, 0.4);*/
 }
 
 .modalContent {
