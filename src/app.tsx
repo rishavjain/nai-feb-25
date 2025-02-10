@@ -1,11 +1,10 @@
 import { Loader, Modal } from '@mantine/core'
-import styles from './app.module.css'
-import { catalog } from './data.ts'
 import { useDisclosure } from '@mantine/hooks'
+import pdfjsWorker from 'pdfjs-dist/build/pdf.worker.min.mjs?worker&url'
 import { Fragment, useState } from 'react'
 import { Document, Page, pdfjs } from 'react-pdf'
-
-import pdfjsWorker from 'pdfjs-dist/build/pdf.worker.min.mjs?worker&url'
+import styles from './app.module.css'
+import { catalog } from './data.ts'
 
 pdfjs.GlobalWorkerOptions.workerSrc = pdfjsWorker
 
@@ -13,9 +12,7 @@ export const App = () => {
   const path = decodeURI(window.location.pathname.slice(1))
   const data = catalog[path as keyof typeof catalog]
   const [opened, { open, close }] = useDisclosure()
-  const [selectedDocument, setSelectedDocument] = useState<
-    { src: string; numPages?: number } | undefined
-  >()
+  const [selectedDocument, setSelectedDocument] = useState<{ src: string; numPages?: number } | undefined>()
 
   // const headerRef = createRef<HTMLButtonElement>()
   //
@@ -56,27 +53,33 @@ export const App = () => {
 
   return (
     <>
-      <div className={styles.imageContainer}>
-        <img className={styles.image} src={data.coverImage} alt={''} />
-        {data.documentLinks.map(({ linkTarget, fileName }, index) => (
-          <Fragment key={index}>
-            <div
-              role={'button'}
-              style={{
-                top: `${linkTarget.top / 16}em`,
-                left: `${linkTarget.left / 16}em`,
-                width: `${linkTarget.width / 16}em`,
-                height: `${linkTarget.height / 16}em`,
-                // top: '0px',
-                // left: '0px',
-                // width: '100px',
-                // height: '100px',
-              }}
-              className={styles.link}
-              onClick={handleOpen(fileName)}
-            />
-          </Fragment>
-        ))}
+      <div className={styles.root}>
+        <div className={styles.imageContainer}>
+          <img className={styles.image} src={data.coverImage} alt={''} />
+          {data.documentLinks.map(({ linkTarget, fileName }, index) => (
+            <Fragment key={index}>
+              <div
+                role={'button'}
+                style={{
+                  top: `${linkTarget.top / 16}em`,
+                  left: `${linkTarget.left / 16}em`,
+                  width: `${linkTarget.width / 16}em`,
+                  height: `${linkTarget.height / 16}em`,
+                  // top: '0px',
+                  // left: '0px',
+                  // width: '100px',
+                  // height: '100px',
+                }}
+                className={styles.link}
+                onClick={handleOpen(fileName)}
+              />
+            </Fragment>
+          ))}
+        </div>
+        <div className={styles.textContainer}>
+          <div className={styles.en}>{data.description.en}</div>
+          <div className={styles.ar}>{data.description.ar}</div>
+        </div>
       </div>
       <Modal
         opened={opened}
@@ -90,9 +93,7 @@ export const App = () => {
             <Document
               file={selectedDocument.src}
               className={styles.document}
-              onLoadSuccess={({ numPages }) =>
-                setSelectedDocument({ ...selectedDocument, numPages })
-              }
+              onLoadSuccess={({ numPages }) => setSelectedDocument({ ...selectedDocument, numPages })}
               loading={
                 <div className={styles.loader}>
                   <Loader size={'md'} color={'brown'} />
