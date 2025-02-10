@@ -197,6 +197,106 @@ const collections = [
       },
     ],
   },
+  {
+    category: '1a',
+    coverImage: '1a.jpg',
+    title: 'Diplomatic Correspondence - Indo-Omani Political Ties - I',
+    description: {
+      en: 'For centuries, diplomatic correspondence has played a crucial role in shaping Indo-Omani relations. These letters, exchanged between Omani Sultans, British officials, and Indian authorities, highlight significant political engagements, royal visits, and expressions of mutual appreciation. They reflect the deep-rooted diplomatic bond that has strengthened over time. ',
+      ar: 'على مدى قرون، لعبت المراسلات الدبلوماسية دورًا محوريًا في تشكيل العلاقات الهندية العُمانية. تعكس هذه الرسائل المتبادلة بين سلاطين عُمان والمسؤولين البريطانيين والسلطات الهندية التفاعلات السياسية المهمة، والزيارات الملكية، ورسائل التقدير المتبادل، مما يعكس الروابط الدبلوماسية العميقة التي توثقت على مر الزمن.',
+    },
+    documentLinks: [],
+  },
+  {
+    category: '1b',
+    coverImage: '1b.jpg',
+    title: 'Diplomatic Correspondence - Indo-Omani Political Ties - II',
+    description: {
+      en: 'For centuries, diplomatic correspondence has played a crucial role in shaping Indo-Omani relations. These letters, exchanged between Omani Sultans, British officials, and Indian authorities, highlight significant political engagements, royal visits, and expressions of mutual appreciation. They reflect the deep-rooted diplomatic bond that has strengthened over time. ',
+      ar: 'على مدى قرون، لعبت المراسلات الدبلوماسية دورًا محوريًا في تشكيل العلاقات الهندية العُمانية. تعكس هذه الرسائل المتبادلة بين سلاطين عُمان والمسؤولين البريطانيين والسلطات الهندية التفاعلات السياسية المهمة، والزيارات الملكية، ورسائل التقدير المتبادل، مما يعكس الروابط الدبلوماسية العميقة التي توثقت على مر الزمن.',
+    },
+    documentLinks: [],
+  },
+  {
+    category: '1',
+    coverImage: '1.jpg',
+    title: 'Diplomatic Correspondence - Indo-Omani Political Ties - III',
+    description: {
+      en: 'For centuries, diplomatic correspondence has played a crucial role in shaping Indo-Omani relations. These letters, exchanged between Omani Sultans, British officials, and Indian authorities, highlight significant political engagements, royal visits, and expressions of mutual appreciation. They reflect the deep-rooted diplomatic bond that has strengthened over time. ',
+      ar: 'على مدى قرون، لعبت المراسلات الدبلوماسية دورًا محوريًا في تشكيل العلاقات الهندية العُمانية. تعكس هذه الرسائل المتبادلة بين سلاطين عُمان والمسؤولين البريطانيين والسلطات الهندية التفاعلات السياسية المهمة، والزيارات الملكية، ورسائل التقدير المتبادل، مما يعكس الروابط الدبلوماسية العميقة التي توثقت على مر الزمن.',
+    },
+    documentLinks: [],
+  },
+  {
+    category: '2',
+    coverImage: '2.jpg',
+    title: 'Trade & Maritime Connections',
+    description: {
+      en: 'Trade and maritime interactions have long been the backbone of Indo-Omani economic ties. From official decrees on export regulations to property transactions involving Indian traders, these documents demonstrate the economic synergy that connected Oman with Indian coastal markets. ',
+      ar: 'كانت التجارة والتواصل البحري العمود الفقري للعلاقات الاقتصادية بين الهند وعُمان. من المراسيم الرسمية المتعلقة بتنظيم الصادرات إلى عمليات بيع العقارات للتجار الهنود، تعكس هذه الوثائق التكامل الاقتصادي الذي ربط عُمان بأسواق الهند الساحلية.',
+    },
+    documentLinks: [],
+  },
+  {
+    category: '3',
+    coverImage: '3.jpg',
+    title: 'Cultural & Educational Exchanges',
+    description: {
+      en: 'Education and cultural exchanges have been pivotal in Indo-Omani relations. Documents show Indian institutions providing academic training to Omani royals, as well as gestures of goodwill like decorated greeting cards, symbolizing a shared cultural heritage.',
+      ar: 'شكل التعليم والتبادل الثقافي جزءًا أساسيًا من العلاقات الهندية العُمانية. توضح الوثائق دور المؤسسات التعليمية الهندية في تدريب أفراد العائلة المالكة العُمانية، إلى جانب رموز التقدير مثل بطاقات التهنئة المزخرفة، التي تعبر عن الإرث الثقافي المشترك.',
+    },
+    documentLinks: [],
+  },
+  {
+    category: '4',
+    coverImage: '4.jpg',
+    title: 'Military & Security Cooperation',
+    description: {
+      en: 'Security and defense cooperation between Oman and India was essential in maintaining regional stability. British and Indian officials worked closely with Omani leaders to address threats such as piracy, insurgencies, and information control, reinforcing military collaboration.',
+      ar: 'كان التعاون الأمني والدفاعي بين عُمان والهند ضروريًا للحفاظ على الاستقرار الإقليمي. عمل المسؤولون البريطانيون والهنود عن كثب مع القادة العُمانيين للتعامل مع التهديدات مثل القرصنة والاضطرابات والسيطرة على المعلومات، مما عزز الشراكة العسكرية.',
+    },
+    documentLinks: [],
+  },
+  {
+    category: '5',
+    coverImage: '5.jpg',
+    title: 'Public Health & Humanitarian Aid',
+    description: {
+      en: 'The exchange of medical aid and humanitarian efforts formed a key aspect of Indo-Omani relations. Letters document quarantine measures, contributions to Indian hospitals, and medical assistance from India to Oman, reflecting a history of mutual support in times of crisis.',
+      ar: 'شكلت المساعدات الطبية والجهود الإنسانية جانبًا أساسيًا من العلاقات الهندية العُمانية. توثق الرسائل الإجراءات الصحية، والمساهمات في المستشفيات الهندية، والمساعدات الطبية من الهند إلى عُمان، مما يعكس تاريخًا من الدعم المتبادل في أوقات الأزمات.',
+    },
+    documentLinks: [],
+  },
+  {
+    category: '6',
+    coverImage: '6.jpg',
+    title: 'Cartography & Navigation',
+    description: {
+      en: "Indo-Omani maritime routes were meticulously charted by British and Omani navigators. These historical maps illustrate trade routes, naval movements, and strategic coastal settlements, highlighting Oman's key role in regional maritime navigation.",
+      ar: 'تم توثيق الطرق البحرية بين الهند وعُمان بدقة من قبل البحارة البريطانيين والعُمانيين. تعرض هذه الخرائط التاريخية طرق التجارة، والتحركات البحرية، والمستوطنات الساحلية الاستراتيجية، مما يؤكد الدور المحوري لعُمان في الملاحة البحرية الإقليمية.',
+    },
+    documentLinks: [],
+  },
+  {
+    category: '7',
+    coverImage: '7.jpg',
+    title: 'Economic Relations & Business Networks',
+    description: {
+      en: 'Economic collaboration between Oman and India has been longstanding, driven by Indian merchant families and royal decrees that facilitated trade. These records showcase key business figures, tax exemptions, and investments that strengthened economic interdependence.',
+      ar: 'امتد التعاون الاقتصادي بين عُمان والهند لعقود طويلة، مدفوعًا بالعائلات التجارية الهندية والمراسيم السلطانية التي سهلت التجارة. تعرض هذه السجلات شخصيات تجارية بارزة، وإعفاءات ضريبية، واستثمارات عززت الاعتماد الاقتصادي المتبادل.',
+    },
+    documentLinks: [],
+  },
+  {
+    category: '8',
+    coverImage: '8.jpg',
+    title: 'Modern Diplomatic Relations',
+    description: {
+      en: 'As India and Oman modernized, diplomatic engagements evolved into strategic partnerships. From high-level visits to commemorative stamps, these records celebrate six decades of Indo-Omani friendship, highlighting continuous efforts to strengthen bilateral ties.',
+      ar: 'مع تحديث الهند وعُمان، تطورت العلاقات الدبلوماسية إلى شراكات استراتيجية. من الزيارات رفيعة المستوى إلى الطوابع التذكارية، تحتفل هذه الوثائق بستة عقود من الصداقة الهندية العُمانية، مما يعكس الجهود المستمرة لتعزيز العلاقات الثنائية.',
+    },
+    documentLinks: [],
+  },
 ] as const satisfies Collection[]
 
 type Category = (typeof collections)[number]['category']
