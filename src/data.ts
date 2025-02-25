@@ -302,7 +302,7 @@ const collections = [
 type Category = (typeof collections)[number]['category']
 
 const resolvePath = (category: Category, fileName: string) => {
-  return new URL(`./assets/${category}/${fileName}`, import.meta.url).href
+  return new URL(`/assets/${category}/${fileName}`, window.location.href).href
 }
 
 export const catalog = collections.reduce(
